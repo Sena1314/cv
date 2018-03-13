@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+    
+
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+
+        <title>_Layout</title>
+    </head>
+    <body>
+
+            <div>
+
+                
+                <center>
+
+                    <img src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-0/p206x206/15095586_10208147865196680_7583871527898153723_n.jpg?oh=1ecc89fc4f8d23a57a000f20cc2757d2&oe=5B3E0FC0" width="300" height="300" alt="Örnek Resim">
+
+                    <p>
+                        <br /><br />
+
+                        <h3>
+                            <a href=@Url.RouteUrl("home")>Kişisel</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <a href=@Url.RouteUrl("yetenek")>Yetenek</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <a href=@Url.RouteUrl("login")>Eğitim</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <a href=@Url.RouteUrl("yabancı")>Yabancı Dil Düzeyi</a>
+                        </h3>
+
+                    </p>
+                </center>
+            </div>
+
+            @RenderBody()
+        </body>
+</html>
